@@ -1,5 +1,6 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
-
 const homeRoutes = require('./src/routes/homeRoutes');
 
 class App {

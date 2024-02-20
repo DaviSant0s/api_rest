@@ -1,0 +1,19 @@
+const { resolve } = require('path');
+
+module.exports = {
+  // Onde vai estar o caminho do arquivo de configuração
+  config: resolve(__dirname, 'src', 'config', 'database.js'),
+  // Caminho dos meus models
+  'models-path':  resolve(__dirname, 'src', 'models'),
+
+  /**
+   * Caminho das migrations.
+   * E essas migrations vão ser alterações que vamos fazer na base de dados.
+   * Ex: criar tabela
+   * A pasta migrations é criada automaticamente
+   */
+  'migrations-path':  resolve(__dirname, 'src', 'database', 'migrations'),
+
+  // A pasta seeds também vai ser criada automaticamente
+  'seeders-path':  resolve(__dirname, 'src', 'database', 'seeds'),
+};

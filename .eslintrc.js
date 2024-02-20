@@ -24,5 +24,7 @@ module.exports = {
   rules: {
     'class-methods-use-this': 'off',
     'no-console': 'off',
+    'import/newline-after-import': 'off',
+    'linebreak-style': 'off',
   },
 };
